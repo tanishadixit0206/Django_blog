@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 
-STATIC_URL = '/static/'
+STATIC_URL = 'blog_project/static/'
 STATIC_ROOT = BASE_DIR / 'static'
 
 # Application definition
