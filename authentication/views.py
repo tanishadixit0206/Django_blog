@@ -37,7 +37,7 @@ class login_view(LoginView):
 class signup_view(CreateView):
     template_name = 'authentication/signup.html'
     form_class = UserCreationForm
-    success_url = reverse_lazy('login')  # Assuming the URL name for the login page is 'login'
+    success_url = reverse_lazy('blog_app:post_list')  # Assuming the URL name for the login page is 'login'
 
     def form_valid(self, form):
         response = super().form_valid(form)
