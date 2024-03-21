@@ -1,5 +1,8 @@
 {% extends 'blog_app/base.html' %}
 {% block content %}
+{% if not user.is_authenticated %}
+  <p style="font-size: 20px; ">You need to log in to create a new entry.</p> 
+{% endif %}
     {% for post in posts %}
         <article class="post">
             <time class="date">
